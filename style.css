@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  text-align: left;
+}
+
+summary {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 22px;
+}
+
+details > div > p {
+  font-size: 16px;
+  flex: 1;
+}
+
+.playerInput {
+  padding: 5px 10px 0 10px;
+}
+
+.scoreboard {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.scoreContainer {
+  justify-content: space-between;
+  width: 30%;
+  display: flex;
+  font-size: 30px;
+}
+
+.player1Clm,
+.player2Clm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.playerBtn {
+  border-radius: 100%;
+  padding: 0.3rem 0.3rem 0.15rem 0.3rem;
+  background-color: transparent;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.imgFlip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
+      <hr />
+    </header>
+
+    <div class="playerInput">
+      <label for="player1">Player1:</label>
+      <input type="text" name="player1" id="player1" />
+      <label for="player2">Player2:</label>
+      <input type="text" name="player2" id="player2" />
+      <label for="bestOf">Best of :</label>
+      <select name="bestOf" id="bestOf">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+      </select>
+      <button id="start">Start!</button>
+    </div>
+
+    <details>
+      <summary>Game Rules</summary>
+      <div>
+        <p>
+          (1.) Scissors cuts Paper (✌ > ✋) (2.) Paper covers Rock (✋ > ✊)
+          (3.) Rock crushes Lizard (✊ > 🦎) (4.) Lizard poisons Spock (🦎 > 🖖)
+          (5.) Spock smashes Scissors (🖖 > ✌) (6.) Scissors decapitates Lizard
+          (✌ > 🦎) (7.) Lizard eats Paper (🦎 > ✋) (8.) Paper disproves Spock
+          (✋ > 🖖) (9.) Spock vaporizes Rock (🖖 > ✊) (10.) Rock crushes
+          Scissors (✊ > ✌)
+        </p>
+      </div>
+    </details>
+
+    <div class="scoreboard">
+      <div class="scoreContainer">
+        <div class="player1Clm">
+          <h3 id="player1Name">Player1</h3>
+          <h4 id="player1Score">0</h4>
+        </div>
+        <strong>X</strong>
+        <div class="player2Clm">
+          <h3 id="player2Name">Player2</h3>
+          <h4 id="player2Score">0</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="mainPlayer1Btn">
+        <button class="playerBtn" id="player1Spock">
+          <img class="player1Img" src="./img/Spock.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player1Lizard">
+          <img class="player1Img" src="./img/Lizard.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player1Scissors">
+          <img class="imgFlip" src="./img/Scissors.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player1Paper">
+          <img src="./img/Paper.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player1Rock">
+          <img class="imgFlip" src="./img/Rock.svg" alt="" />
+        </button>
+      </div>
+      <div class="mainPlayer2Btn">
+        <button class="playerBtn" id="player2Rock">
+          <img src="./img/Rock.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player2Paper">
+          <img class="imgFlip" src="./img/Paper.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player2Scissors">
+          <img src="./img/Scissors.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player2Lizard">
+          <img class="imgFlip" src="./img/Lizard.svg" alt="" />
+        </button>
+        <button class="playerBtn" id="player2Spock">
+          <img class="imgFlip" src="./img/Spock.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
